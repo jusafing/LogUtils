@@ -1,6 +1,5 @@
 use strict;
 use warnings;
-use Pnaf::Core;
 use POSIX;
 ##############################################################################
 ##    Log Utils 0.2.0                                                        #
@@ -27,10 +26,10 @@ package main;
 ## Author     : Javier Santillan					    ##
 ## Syntax     : logMsgT(FUNCTION_NAME,MESSAGE,CODE,LOG_FILE)	  	    ##
 ## Options    : CODE  >  -1>FATAL_ERROR 0>ERROR  1>WARNING  2>INFO  3>DEBUG ##
-## 
-## IMPORTANT  : Replace $CFG::options{XXX} with your corresponding control
-##		variable to set the control of DEBUG, VERBOSE and QUIET
-##		options. 
+## 									    ##
+## IMPORTANT  : Replace $CFG::options{XXX} with your corresponding control  ##
+##		variable to set the control of DEBUG, VERBOSE and QUIET	    ##
+##		options.						    ## 
 ##############################################################################
 sub logMsgT
 {
